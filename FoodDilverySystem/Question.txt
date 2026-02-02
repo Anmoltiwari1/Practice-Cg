@@ -1,0 +1,16 @@
+1. Food Delivery Order Routing System
+Scenario:
+ A food delivery company assigns orders to delivery agents based on proximity and availability.
+Requirements:
+Store orders using Queue<Order>
+Store delivery agents using List<Agent>
+Assign orders FIFO to the nearest available agent
+Use OOP: Order, Agent, DeliveryService
+Throw NoAgentAvailableException if no agent is free
+Use methods to assign, cancel, and view active deliveries
+
+Concepts: Queue, List, OOP, Exception Handling
+
+interface-->order,agent
+Order class-->Register order,cancel order,orderDone
+Agent class-->Register Agent,remove agent

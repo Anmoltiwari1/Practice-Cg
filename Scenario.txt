@@ -1,0 +1,71 @@
+Question:1. Food Delivery Order Routing System
+Scenario:
+ A food delivery company assigns orders to delivery agents based on proximity and availability.
+Requirements:
+Store orders using Queue<Order>
+Store delivery agents using List<Agent>
+Assign orders FIFO to the nearest available agent
+Use OOP: Order, Agent, DeliveryService
+Throw NoAgentAvailableException if no agent is free
+Use methods to assign, cancel, and view active deliveries
+
+Concepts: Queue, List, OOP, Exception Handling
+
+
+
+STEP 1: Strip the story (2 minutes)
+
+Ignore “Smart”, “System”, “Routing”, “Management”.
+
+Rewrite the problem in boring terms:
+
+Orders go in a queue
+Agents sit in a list
+Assign first order to first free agent
+If no agent → throw exception
+
+That’s it.
+If you can’t rewrite it this simply, you don’t understand it yet.
+
+STEP 2: Extract NOUNS → Classes (3 minutes)
+
+Underline nouns in the problem:
+Order
+Agent
+DeliveryService
+Boom.
+Those are your classes.
+No thinking. No creativity.
+
+If a noun can “do something”, it’s a class.
+
+
+STEP 3: Extract VERBS → Methods (3 minutes)
+
+Underline actions:
+assign
+cancel
+view
+
+They go into DeliveryService, not everywhere.
+
+👉 This is where beginners mess up:
+They spread logic across all classes.
+
+Rule:
+
+Coordination logic always lives in ONE service class.
+
+STEP 4: Extract DATA STRUCTURES (3 minutes)
+
+Look for keywords:
+Keyword	Structure
+FIFO	Queue
+collection of agents	List
+“if none available”	Exception
+
+Now the design is basically DONE.
+
+STEP 5: Write EMPTY code first (4 minutes)
+
+This is what you SHOULD write first — not full code:

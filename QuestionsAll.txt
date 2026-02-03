@@ -1,0 +1,17 @@
+1.AreoVigil -->Done
+2.Future logistics  --->Done
+3.Food dilivery system -->Done
+4.Online Classroom Attendance  --> Done
+5.Flip key 
+6.Lexical twist
+7.Parcel tracker
+8.Exam proctor
+9.Browser buddy
+10.Traffic Manager
+11.BoomSelf
+12.Flight booking 
+13.student granding 
+14.Temprature. Analysis 
+15.Student test score
+16.Sentence formatter
+17.Pragaraph text

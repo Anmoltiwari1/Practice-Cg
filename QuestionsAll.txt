@@ -2,7 +2,7 @@
 2.Future logistics  --->Done
 3.Food dilivery system -->Done
 4.Online Classroom Attendance  --> Done
-5.Flip key 
+5.Flip key --> Done
 6.Lexical twist
 7.Parcel tracker
 8.Exam proctor

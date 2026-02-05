@@ -82,7 +82,7 @@ public class LixicalTwist {
 
     if(vowel>consonant){
         for(int i=0;i<combUpper.length();i++){
-            if(combUpper.charAt(i)=='A' && combUpper.charAt(i)=='E' && combUpper.charAt(i)=='I' && combUpper.charAt(i)=='O' &&combUpper.charAt(i)=='U'){
+            if(combUpper.charAt(i)=='A' ||  combUpper.charAt(i)=='E' ||  combUpper.charAt(i)=='I' ||  combUpper.charAt(i)=='O' || combUpper.charAt(i)=='U'){
                 res.add(combUpper.charAt(i));
                 if(res.size()==2)   
                     return res;

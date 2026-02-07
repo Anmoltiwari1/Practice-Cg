@@ -3,7 +3,7 @@
 3.Food dilivery system -->Done
 4.Online Classroom Attendance  --> Done
 5.Flip key --> Done
-6.Lexical twist
+6.Lexical twist --> Done
 7.Parcel tracker
 8.Exam proctor
 9.Browser buddy

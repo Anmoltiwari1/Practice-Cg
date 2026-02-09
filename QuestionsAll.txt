@@ -5,8 +5,8 @@
 5.Flip key --> Done
 6.Lexical twist --> Done
 7.Parcel tracker -->Done
-8.Exam proctor
-9.Browser buddy
+8.Exam proctor -->Done
+9.Browser buddy -->Done
 10.Traffic Manager
 11.BoomSelf
 12.Flight booking 

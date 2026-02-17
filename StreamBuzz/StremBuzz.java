@@ -3,6 +3,7 @@ import java.util.Dictionary;
 import java.util.HashMap;
 import java.util.Hashtable;
 import java.util.List;
+import java.util.Scanner;
 
 class CreatorStats{
 
@@ -52,20 +53,71 @@ class Engagment{
 
 public class StremBuzz {
     public static void main(String[] args) {
+
+        Scanner sc=new Scanner(System.in);
+
         Engagment engagment=new Engagment();
 
-        CreatorStats creatorStats1=new CreatorStats("Amit", new double[]{2,3,4,5,6});
-        CreatorStats creatorStats2=new CreatorStats("Faujdar", new double[]{2,4,5,6,7});
-        CreatorStats creatorStats3=new CreatorStats("Arnav", new double[]{2,3,4,5,6,9});
-        CreatorStats creatorStats4=new CreatorStats("Parv", new double[]{2,3,4,5,6,12});
+        System.out.println("Enter the choice to be done");
+        System.out.println("Enter the 1 for regster the creator");
+        System.out.println("Enter 2 for getting the top post");
+        System.out.println("Enter the 3 for geting Overall average weekly likes");
+        int ch=sc.nextInt();
+        sc.nextLine();
 
-        engagment.RegisterCreator(creatorStats1);
-        engagment.RegisterCreator(creatorStats2);
-        engagment.RegisterCreator(creatorStats3);
-        engagment.RegisterCreator(creatorStats4);
+        boolean choose=true;
 
-        System.out.println(engagment.GetTopPostCounts(3));
-        System.out.print("Average like is: ");
-        System.out.println(engagment.CalculateAverageLikes());
+        while(choose){
+
+            switch (ch) {
+                case 1:
+                    System.out.println("Enter the CreaterName");
+                    String creatorName=sc.nextLine();
+    
+    
+                    System.out.println("Enter the Weekly likes");
+                    double[] likes=new double[7];
+                    for(int i=0;i<7;i++){
+                        System.out.println("Enter the likes of "+(i+1)+"th day");
+                        likes[i]=sc.nextDouble();
+                    }
+                    sc.nextLine();
+    
+                    engagment.RegisterCreator(new CreatorStats(creatorName, likes));
+    
+                    System.out.println("Creator registered Succesfully");
+                    break;
+    
+                case 2:
+                    System.out.println("Enter the Threshold likes");
+                    double Threshold=sc.nextDouble();
+                    sc.nextLine();
+    
+                    System.out.println(engagment.GetTopPostCounts(Threshold));
+                    break;
+    
+                case 3:
+                    System.out.println("Overall average weekly likes is :"+engagment.CalculateAverageLikes());
+                    break;
+    
+                
+                default:
+                    System.out.println("Ypu have enter the wronog choice");
+                    break;
+            }
+            System.out.println("Do you want any other task to be done enter Yes/No");
+            String c=sc.nextLine();
+        
+            choose=c.equalsIgnoreCase("Yes");
+
+            if(choose){
+                System.out.println("Enter the choice");
+                ch=sc.nextInt();
+                sc.nextLine();
+            }
+        }
+
+
+        sc.close();
     }
 }
